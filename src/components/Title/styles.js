@@ -13,15 +13,15 @@ export const TitleHeading = styled.h1`
     }
   }
   @media (max-width: 800px) {
-    font-size: 70px;
-    padding-left: 30px;
-  }
-  @media (max-width: 620px) {
     font-size: 60px;
     padding-left: 30px;
   }
-  @media (max-width: 415px) {
+  @media (max-width: 620px) {
     font-size: 50px;
+    padding-left: 30px;
+  }
+  @media (max-width: 415px) {
+    font-size: 40px;
     padding-left: 30px;
   }
 `;
