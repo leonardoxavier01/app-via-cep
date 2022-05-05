@@ -1,17 +1,17 @@
 import { Container } from './styles'
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-const Card = ({ cep, logradouro, complemento, bairro, localidade, uf }) => {
+const Card = (props) => {
     return (
         <Container>
             <h2>
-                CEP: {cep} <FaMapMarkerAlt size={25} color="#940000" />
+                CEP: {props.cep} <FaMapMarkerAlt size={25} color="#940000" />
             </h2>
-            <span>{logradouro}</span>
-            <span>Complemento: {complemento}</span>
-            <span>Bairro: {bairro}</span>
+            <span>{props.logradouro}</span>
+            <span>Complemento: {props.complemento}</span>
+            <span>Bairro: {props.bairro}</span>
             <span>
-                {localidade} - {uf}
+                {props.localidade} - {props.uf}
             </span>
         </Container>
     )
